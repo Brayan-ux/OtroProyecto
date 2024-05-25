@@ -10,12 +10,16 @@ function infoEcologica() {
 
 function verDatos(tipo) {
     let info = document.getElementById("datos")
-    
-    if(tipo == "Progra") {
+    let fondo = document.getElementById("fondoCarreras")
+
+    if(tipo == 1) {
         info.innerText = ""
-    } else if(tipo == "Mine") {
+        fondo.style.backgroundImage = "url('imgs/fondoEcoturismo.jpg')"
+    } else if(tipo == 2) {
         info.innerText = ""
-    } else {
+        fondo.style.backgroundImage = "url('imgs/fondoProgra.jpg')"
+    } else if(tipo == 3) {
         info.innerText = ""
+        fondo.style.backgroundImage = "url('imgs/fondoMineria.jpg')"
     }
 }

@@ -55,81 +55,79 @@ body {
     padding: 0.5%;
 }
 
-.contenedor2 {
+.contenedorGrid {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: ;
 }
 
-.contendedorTitulos {
-    display: grid;
-    grid-template-rows: repeat(33.3%);
+.tituloCarreras {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 1px solid black;
+    padding: 1%;
+    text-align: center;
+    vertical-align: center;
+    overflow-y: hidden;
+    color: aliceblue;
+    background-image: url("imgs/fondoCarreras.avif");
+}
+
+#contenedorCarreras {
+    margin: 0;
+    padding-top: 5cqh;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    align-items: center;
+    padding-right: 10px;
 }
 
 #datos {
-    display: absolute;
-    width: 70%;
-    margin-right: 1%;
+    border: 1px solid saddlebrown;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
 
-.esquinaBoton {
-    margin-right: 1%;
-}
-
-.botoncito {
-    appearance: none;
-    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
-    border: 0;
-    border-radius: 6px;
-    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
-    box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
-    font-family: "JetBrains Mono", monospace;
-    height: 48px;
+.botonCarrera {
+    border: 2px solid black;
+    border-radius: 10%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    align-items: center;
     text-align: center;
-    line-height: 1;
-    list-style: none;
-    overflow: hidden;
     padding: 10px;
-    position: absolute;
-    text-align: left;
-    text-decoration: none;
-    transition: box-shadow .15s, transform .15s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-    font-size: 18px;
+    background-color: aliceblue;
 }
 
-.botoncito:focus {
-    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+.presionarCarrera {
+    border: none;
+    background-color: aliceblue;
+    padding-left: 0%;
+    font-size: 1.3em;
 }
 
-.botoncito:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
-    transform: translateY(-2px);
+.presionarCarrera:hover {
+    color:rgb(0, 217, 255)
 }
 
-.botoncito:active {
-    box-shadow: #3c4fe0 0 3px 7px inset;
-    transform: translateY(2px);
+.iconoCarrera {
+    width: 50px; 
+    margin-left: 30%; 
+    padding-right: 0;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-
+.bajoCarreras {
+    margin-top: 10%;
+    margin-left: 20%;
 }
 
-.box {
-    padding: 2em;
-    border-radius: 5%;
-    background-color: #f8f9fa;
-    border: 1px solid #ddd;
+
+#imagenBanda {
+    width: 90%;
 }
 
 #videoPro {
