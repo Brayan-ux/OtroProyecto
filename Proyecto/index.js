@@ -9,15 +9,13 @@ function infoEcologica() {
 }
 
 function verDatos(tipo) {
-    let infoProgra = document.getElementById("datosProgra")
-    let infoMineria = document.getElementById("datosMine")
-    let infoEcotu = document.getElementById("datosEcotursimo")
+    let info = document.getElementById("datos")
     
     if(tipo == "Progra") {
-
+        info.innerText = ""
     } else if(tipo == "Mine") {
-
+        info.innerText = ""
     } else {
-
+        info.innerText = ""
     }
 }
