@@ -12,9 +12,8 @@ body {
     font-size: 1.5rem;
     background-color: #1DCE10;
     text-align: center;
-}
-
-h1 {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
     font-family: 'Roboto';
 }
 
@@ -22,37 +21,6 @@ h1 {
     width: 10%;
     border-radius: 10%;
     text-align: center;
-}
-
-.navi {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-.top,
-.navi-item {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-}
-
-.navi-item {
-    background-color: orange;
-}
-
-
-a {
-    text-decoration: none;
-    color: #531af0;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-a:focus {
-    outline: none;
 }
 
 .contenedor {
