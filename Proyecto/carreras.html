@@ -10,41 +10,38 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <script src="Bootstrap/js/bootstrap.min.js"></script>
 </head>
-
 <body>
-    <div class="contenedorGrid">
-        <header class="tituloCarreras">
-            <h1>Carreras Ofertadas</h1>
+    <section id="grid-area">
+        <header class="item header">
+            <h1>Carreras ofertadas</h1>
         </header>
-        <div id="fondoCarreras">
-            <div id="contenedorCarreras">
-                <div class="botonCarrera">
-                    <img class="iconoCarrera" align="left" src="imgs/iconoEcoturismo.png">
-                    <button type="button" class="presionarCarrera" onclick="verDatos(1)">
-                        <h3>Ecoturismo</h3>
-                    </button>
-                </div>
-                <div class="botonCarrera">
-                    <img class="iconoCarrera" align="left" src="imgs/iconoProgra.png">
-                    <button type="button" class="presionarCarrera" onclick="verDatos(2)">
-                        <h3>Programación</h3>
-                    </button>
-                </div>
-                <div class="botonCarrera">
-                    <img class="iconoCarrera" align="left" src="imgs/iconoMineria.png">
-                    <button type="button" class="presionarCarrera" onclick="verDatos(3)">
-                        <h3>Minería</h3>
-                    </button>
-                </div>
+        <div class="item content">
+            <div class="botonCarrera">
+                <img class="iconoCarrera" align="left" src="imgs/iconoEcoturismo.png">
+                <button type="button" class="presionarCarrera" onclick="verDatos(1)">
+                    <h2>Ecoturismo</h2>
+                </button>
             </div>
-            <div id="datos">
-        
+            <div class="botonCarrera">
+                <img class="iconoCarrera" align="left" src="imgs/iconoProgra.png">
+                <button type="button" class="presionarCarrera" onclick="verDatos(2)">
+                    <h2>Programación</h2>
+                </button>
             </div>
-            <div class="bajoCarreras">
-                <a class="btn btn-info" href="main.html">Volver al inicio</a>
+            <div class="botonCarrera">
+                <img class="iconoCarrera" align="left" src="imgs/iconoMineria.png">
+                <button type="button" class="presionarCarrera" onclick="verDatos(3)">
+                    <h2>Minería</h>
+                </button>
             </div>
         </div>
-    </div>
+        <aside class="item aside" id="datos">
+            
+        </aside>
+        <footer class="item footer">
+            <a class="btn btn-info" style="margin-left: 40%; width: 20%;" href="main.html">Volver al inicio</a>
+        </footer>
+    </section>
 </body>
 
 </html>

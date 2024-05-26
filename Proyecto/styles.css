@@ -55,17 +55,20 @@ body {
     padding: 0.5%;
 }
 
-.contenedorGrid {
+#grid-area {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: ;
+    height: 95vh;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 100px 1fr 20px;
+    grid-template-areas: 
+    "header header"
+    "content aside"
+    "footer footer";
+    align-content: center;
 }
 
-.tituloCarreras {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+#grid-area > header {
+    grid-area: header;
     border: 1px solid black;
     padding: 1%;
     text-align: center;
@@ -75,32 +78,34 @@ body {
     background-image: url("imgs/fondoCarreras.avif");
 }
 
-#contenedorCarreras {
-    margin: 0;
-    padding-top: 5cqh;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    align-items: center;
-    padding-right: 10px;
+#grid-area > div {
+    grid-area: content;
+    padding-top: 20%;
 }
 
-#datos {
-    border: 1px solid saddlebrown;
-    grid-column-start: 2;
-    grid-column-end: 4;
+#grid-area > aside {
+    grid-area: aside;
+    margin: 2%;
+    padding: 20px;
+    font-size: 1.8rem;
+    color:azure
+}
+
+#grid-area > footer {
+    grid-area: footer;
 }
 
 .botonCarrera {
     border: 2px solid black;
-    border-radius: 10%;
+    border-radius: 5%;
     margin-left: 5%;
     margin-bottom: 2%;
     align-items: center;
     text-align: center;
-    padding: 10px;
     background-color: aliceblue;
+    height: 25%;
+    width: 95%;
+    padding-top: 8%;
 }
 
 .presionarCarrera {
@@ -120,16 +125,6 @@ body {
     padding-right: 0;
 }
 
-.bajoCarreras {
-    margin-top: 10%;
-    margin-left: 20%;
-}
-
-
 #imagenBanda {
     width: 90%;
-}
-
-#videoPro {
-    
 }
