@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     font-size: 1.5rem;
-    background-color: #1DCE10;
+    background-color: #103AC3;
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -23,33 +23,26 @@ body {
     text-align: center;
 }
 
-.contenedor {
-    position: relative;
-    z-index: 1;
-    width: 100%;
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
 }
 
-#infoEcologica {
-    position: absolute;
-    z-index: 3;
-    right: 1%;
-    bottom: 10%;
-    width: 3rem;
-    height: 40%;
-    font-size: 1.3rem;
-    display: none;
-    background-color: #32e725;
-    padding: 1%;
-    border-radius: 5%;
-    width: 15%;
-}
+
 
 #plantita {
-    position: absolute;
+    position: fixed;
     right: 2%;
     bottom: 2%;
     z-index: 2;
-    border-radius: 6px;
+    border-radius: 10%;
     border: none;
     cursor: pointer;
     padding: 0.5%;
@@ -60,16 +53,16 @@ body {
     height: 95vh;
     grid-template-columns: 400px 1fr;
     grid-template-rows: 100px 1fr 20px;
-    grid-template-areas: 
-    "header header"
-    "content aside"
-    "footer footer";
+    grid-template-areas:
+        "header header"
+        "content aside"
+        "footer footer";
     align-content: center;
-    background: linear-gradient( #2bbfe4 0%, #eaecc6 100%);
+    background: linear-gradient(#2bbfe4 0%, #eaecc6 100%);
     overflow-y: visible;
 }
 
-#grid-area > header {
+#grid-area>header {
     grid-area: header;
     border: 1px solid black;
     padding: 1%;
@@ -80,22 +73,22 @@ body {
     background-image: url("imgs/fondoCarreras.avif");
 }
 
-#grid-area > div {
+#grid-area>div {
     grid-area: content;
     padding-top: 20%;
 }
 
-#grid-area > aside {
+#grid-area>aside {
     grid-area: aside;
     margin: 2%;
     padding: 20px;
     font-size: 1.8rem;
-    color:azure;
+    color: azure;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#grid-area > footer {
+#grid-area>footer {
     grid-area: footer;
 }
 
@@ -120,12 +113,12 @@ body {
 }
 
 .presionarCarrera:hover {
-    color:rgb(0, 217, 255)
+    color: rgb(0, 217, 255)
 }
 
 .iconoCarrera {
-    width: 50px; 
-    margin-left: 30%; 
+    width: 50px;
+    margin-left: 30%;
     padding-right: 0;
 }
 
