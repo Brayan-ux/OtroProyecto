@@ -10,6 +10,7 @@ body {
     display: grid;
     grid-template-columns: 20% 60% 20%;
     font-size: 1.5rem;
+    color: aliceblue;
     background-color: #103AC3;
     text-align: center;
     padding-top: 0.5em;
