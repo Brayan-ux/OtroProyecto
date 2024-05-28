@@ -15,7 +15,7 @@ function infoEcologica() {
     } else {
         info.style.background = "none"
         titulo.style.display = "none"
-        texto.innerText = "Hola, bienvenidos al cecytea plantel Asientos. Acompáñanos a conocer una de tus mejores opciones para estudiar el bachillerato."
+        texto.innerText = ""
         texto.style.color = "white"
         img1.setAttribute("src", "imgs/cecytea2.jpg")
         img2.setAttribute("src", "imgs/cecytea1.jpg")
@@ -23,16 +23,23 @@ function infoEcologica() {
 }
 
 function verDatos(tipo) {
-    let info = document.getElementById("datos")
+    let boton = document.getElementById('botonPlanEstudios')
+    let info = document.getElementById("infoCarreras")
+    let fondo = document.getElementById("datos")
+
+    boton.style.display = "block"
 
     if(tipo == 1) {
-        info.innerText = "Los alumnos comienzan con conocimientos de los recursos naturales, se valoran y aprenden los impactos que tienen de manera turística. Los alumnos se enseñan a realizar rutas turísticas tienen prácticas profesionales respecto a hoteleria, cocina y finalizan con promoción, publicidad, mercadotecnia y  contaduría. Para esta carrera se cuenta totalmente con los espacios y utensilios necesarios para que los alumnos realicen sus prácticas profesionalmente.. "
-        info.style.backgroundImage = "url('imgs/fondoEcoturismo.jpg')"
+        info.innerText = "Los alumnos comienzan con conocimientos de los recursos naturales, se valoran y aprenden los impactos que tienen de manera turística. Los alumnos aprender a realizar rutas turísticas tienen prácticas profesionales respecto a hoteleria, cocina y finalizan con promoción, publicidad, mercadotecnia y contaduría. Para esta carrera se cuenta totalmente con los espacios y utensilios necesarios para que los alumnos realicen sus prácticas profesionalmente."
+        fondo.style.backgroundImage = "url('imgs/fondoEcoturismo.jpg')"
+        boton.setAttribute("href", "planEco.html")
     } else if(tipo == 2) {
         info.innerText = "Esta especialidad consiste en la utilización de diferentes lenguajes de programación para realizar elementos visuales,  páginas web , aplicaciones, entre otras cosas, para ello contamos con un laboratorio con los equipos necesarios,  y una biblioteca de laptops para el uso de los estudiantes."
-        info.style.backgroundImage = "url('imgs/fondoProgra.jpg')"
-    } else if(tipo == 3) {
+        fondo.style.backgroundImage = "url('imgs/fondoProgra.jpg')"
+        boton.setAttribute("href", "planProgra.html")
+        } else if(tipo == 3) {
         info.innerText = "Aquí va texto de minería"
-        info.style.backgroundImage = "url('imgs/fondoMineria.jpg')"
+        fondo.style.backgroundImage = "url('imgs/fondoMineria.jpg')"
+        boton.setAttribute("href", "planMine.html")
     }
 }
