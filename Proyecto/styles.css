@@ -207,6 +207,25 @@ body {
     bottom: 3%;
 }
 
+.botonVolverProgra, .evidencias {
+    z-index: 3;
+    position: absolute; 
+    width: 20%;
+    bottom: 1%;
+}
+
+.botonVolverProgra {
+    left: 20%;
+}
+
+.evidencias {
+    right: 18%;
+}
+
+.evidencias {
+
+}
+
 .contendorSlide {
     width: 78%;
     overflow: hidden;
