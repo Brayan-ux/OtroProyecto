@@ -1,25 +1,10 @@
 function infoEcologica() {
     let info = document.getElementById("info")
-    let titulo = document.getElementById("tituloEco")
-    let texto = document.getElementById("intro")
-    let img1 = document.getElementById("fotoEco1")
-    let img2 = document.getElementById("fotoEco2")
 
-    if(titulo.style.display == "none") {
-        info.style.background = "rgb(139, 255, 216)"
-        titulo.style.display = "block"
-        texto.innerText = "Aquí va información ecológica"
-        texto.style.color = "black"
-        img1.setAttribute("src", "imgs/ecologica1.jpg")
-        img2.setAttribute("src", "imgs/ecologica2.jpg")
-    } else {
-        info.style.background = "none"
-        titulo.style.display = "none"
-        texto.innerText = ""
-        texto.style.color = "white"
-        img1.setAttribute("src", "imgs/cecytea2.jpg")
-        img2.setAttribute("src", "imgs/cecytea1.jpg")
-    }
+    if(info.style.display == "none") 
+        info.style.display = "block"
+    else 
+        info.style.display = "none"
 }
 
 function verDatos(tipo) {
