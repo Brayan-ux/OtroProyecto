@@ -11,37 +11,66 @@
     <script src="Bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<body style="background: linear-gradient(#2bbfe4 0%, #eaecc6 100%);">
+<body>
     <section id="grid-area">
-        <header class="item header">
+        <header class="header">
             <h1>Carreras ofertadas</h1>
         </header>
-        <div class="item content">
-            <div class="botonCarrera">
-                <img class="iconoCarrera" align="left" src="imgs/iconoEcoturismo.png">
-                <button type="button" class="presionarCarrera" onclick="verDatos(1)">
-                    <h2>Ecoturismo</h2>
+        <div>
+            <p class="gridBotones">
+                <button class="botonCarrera" type="button" id="b1" onclick="mostrar(1)">
+                    Ecoturismo
                 </button>
+                <button class="botonCarrera" type="button" id="b2" onclick="mostrar(2)">
+                    Programación
+                </button>
+                <button class="botonCarrera" type="button" id="b3" onclick="mostrar(3)">
+                    Minería
+                </button>
+            </p>
+            <div id="infoEcoturismo">
+                <div>
+                    <div class="contenedorTexto">
+                        <h3 class="tituloCarrera display-6">Ecoturismo</h3>
+                        <p class="introCarrera lead">
+                            Los alumnos comienzan con conocimientos de los recursos naturales, se valoran y aprenden los
+                            impactos que tienen de manera turística. Los alumnos aprender a realizar rutas turísticas
+                            tienen
+                            prácticas profesionales respecto a hoteleria, cocina y finalizan con promoción, publicidad,
+                            mercadotecnia y contaduría. Para esta carrera se cuenta totalmente con los espacios y
+                            utensilios
+                            necesarios para que los alumnos realicen sus prácticas profesionalmente.
+                        </p>
+                        <a href="planEco.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
+                    </div>
+                    <img class="imagen" src="imgs/fondoEcoturismo.jpg">
+                </div>
             </div>
-            <div class="botonCarrera">
-                <img class="iconoCarrera" align="left" src="imgs/iconoProgra.png">
-                <button type="button" class="presionarCarrera" onclick="verDatos(2)">
-                    <h2>Programación</h2>
-                </button>
+            <div id="infoProgramacion">
+                <div>
+                    <div class="contenedorTexto">
+                        <h3 class="tituloCarrera display-6">Programación</h3>
+                        <p class="introCarrera lead">Esta especialidad consiste en la utilización de diferentes lenguajes de programación para realizar elementos visuales, páginas web ,aplicaciones, entre otras cosas, para ello contamos con un laboratorio con los equipos necesarios, y una biblioteca de laptops para el uso de los estudiantes.</p>
+                        <a href="planProgra.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
+                    </div>
+                    <img class="imagen" style="width: 53%;" src="imgs/fondoProgra.jpg">
+                </div>
             </div>
-            <div class="botonCarrera">
-                <img class="iconoCarrera" align="left" src="imgs/iconoMineria.png">
-                <button type="button" class="presionarCarrera" onclick="verDatos(3)">
-                    <h2>Minería</h>
-                </button>
+            <div id="infoMineria">
+                <div>
+                    <div class="contenedorTexto">
+                        <h3 class="tituloCarrera display-6">Minería</h3>
+                        <p class="introCarrera lead"></p>
+                        <a href="planMine.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
+                    </div>
+                    <img class="imagen" style="width: 55%;" src="imgs/fondoMineria.jpg">
+                </div>
             </div>
         </div>
-        <aside class="item aside" id="datos">
-            <a class="btn btn-warning" id="botonPlanEstudios">Ver plan de estudios</a>
-            <div id="infoCarreras"></div>
-        </aside>
         <footer class="item footer">
-            <a class="btn btn-warning" style="margin-left: 30%; width: 40%;" href="main.html">Volver al inicio</a>
+            <a href="main.html"><img
+                    style="position:fixed; max-width: 60px; bottom: 1%; left: 1%; background-color: white; padding: 6px; border-radius: 30px; border: 2px solid #FF9912;"
+                    src="imgs/flechaRegreso.png"></a>
         </footer>
     </section>
 </body>

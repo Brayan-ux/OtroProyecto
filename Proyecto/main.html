@@ -12,84 +12,37 @@
 </head>
 
 <body>
-  <header class="top" style="z-index: 2;">
-    <p></p>
-    <h1>CECYTEA ASIENTOS</h1>
+  <header class="top fondoEnca" style="z-index: 2;">
+    <img src="imgs/logoIea.png" style="background-color: white; max-height: 80px; margin-left: 5%; border-radius: 10px;">
+    <img src="imgs/logoCecytea.png" style="max-height: 80px; margin-left: 30%;">
     <div>
-      <div style="margin-top: 5%;">
-        <img src="imgs/instagramLogo.png" class="logo">
-        <a href="https://www.instagram.com/cecytea.ags/">Instagram</a>
+      <div style="margin-top: 8%;">
+        <a href="https://www.instagram.com/cecytea.ags/"><img src="imgs/instagramLogo.png" style="max-width: 40px; margin-right: 30px;"></a>
+        <a href="https://www.facebook.com/Cecyteaplantelaguascalientes"><img src="imgs/fondoFacebook.png" style="max-width: 40px;"></a>
       </div>
     </div>
   </header>
-  <nav style="z-index: 2;">
-    <ul class="nav nav-pills nav-fill" style="font-size: 1.6rem; font-weight: bold;">
+  <nav style="z-index: 2;" class="fondoEnca enlacesPrin">
+    <ul class="nav nav-pills nav-fill" style="font-size: 1.4rem; font-weight: bold; padding-bottom: 10px;">
       <li class="nav-item">
-        <a class="nav-link" href="carreras.html">Carreras</a>
+        <a class="enlacesNav" href="carreras.html">Carreras</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="clubs.html">Clubs</a>
+        <a class="enlacesNav" href="clubs.html">Clubs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="programas.html">Programas</a>
+        <a class="enlacesNav" href="programas.html">Programas</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="videoPro.html">Video Promocional</a>
+        <a class="enlacesNav" href="videoPro.html">Video Promocional</a>
       </li>
     </ul>
   </nav>
-  <video loop="loop" id="video_background" autoplay muted>
-    <source src="videos/videoFondoInicio.mp4" type="video/mp4">
-  </video>
-  <div class="info" id="info">
-    <div id="clubs" class="carousel slide row">
-      <div class="carousel-inner">
-        <div class="carousel-item active contendorSlide">
-          <img id="eco1" class="imagenesEco" src="imgs/ecología/eco1.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco2" class="imagenesEco" src="imgs/ecología/eco2.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco3" class="imagenesEco" src="imgs/ecología/eco3.jpeg">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco4" class="imagenesEco" src="imgs/ecología/eco4.jpeg">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco5" class="imagenesEco" src="imgs/ecología/eco5.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco6" class="imagenesEco" src="imgs/ecología/eco6.jpeg">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco7" class="imagenesEco" src="imgs/ecología/eco7.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco8" class="imagenesEco" src="imgs/ecología/eco8.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco9" class="imagenesEco" src="imgs/ecología/eco9.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco10" class="imagenesEco" src="imgs/ecología/eco10.png">
-        </div>
-        <div class="carousel-item contendorSlide">
-          <img id="eco11" class="imagenesEco" src="imgs/ecología/eco11.png">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#clubs" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#clubs" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
+  <div>
+    <video loop="loop" id="video_background" autoplay muted>
+      <source src="videos/videoFondoInicio.mp4" type="video/mp4">
+    </video>
   </div>
-  <button type="button" id="plantita" onclick="infoEcologica()"><img src="imgs/planta.png" id="imgPlanta"
-      style="max-width: 40px;"></button>
 </body>
 
 </html>

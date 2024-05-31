@@ -1,30 +1,33 @@
 function infoEcologica() {
     let info = document.getElementById("info")
 
-    if(info.style.display == "none") 
+    if (info.style.display == "none")
         info.style.display = "block"
-    else 
+    else
         info.style.display = "none"
 }
 
-function verDatos(tipo) {
-    let boton = document.getElementById('botonPlanEstudios')
-    let info = document.getElementById("infoCarreras")
-    let fondo = document.getElementById("datos")
+function mostrar(tipo) {
 
-    boton.style.display = "block"
+    let infoEco = document.getElementById('infoEcoturismo')
+    let infoProgra = document.getElementById('infoProgramacion')
+    let infoMineria = document.getElementById('infoMineria')
 
-    if(tipo == 1) {
-        info.innerText = "Los alumnos comienzan con conocimientos de los recursos naturales, se valoran y aprenden los impactos que tienen de manera turística. Los alumnos aprender a realizar rutas turísticas tienen prácticas profesionales respecto a hoteleria, cocina y finalizan con promoción, publicidad, mercadotecnia y contaduría. Para esta carrera se cuenta totalmente con los espacios y utensilios necesarios para que los alumnos realicen sus prácticas profesionalmente."
-        fondo.style.backgroundImage = "url('imgs/fondoEcoturismo.jpg')"
-        boton.setAttribute("href", "planEco.html")
-    } else if(tipo == 2) {
-        info.innerText = "Esta especialidad consiste en la utilización de diferentes lenguajes de programación para realizar elementos visuales,  páginas web , aplicaciones, entre otras cosas, para ello contamos con un laboratorio con los equipos necesarios,  y una biblioteca de laptops para el uso de los estudiantes."
-        fondo.style.backgroundImage = "url('imgs/fondoProgra.jpg')"
-        boton.setAttribute("href", "planProgra.html")
-        } else if(tipo == 3) {
-        info.innerText = "Aquí va texto de minería"
-        fondo.style.backgroundImage = "url('imgs/fondoMineria.jpg')"
-        boton.setAttribute("href", "planMine.html")
+    switch (tipo) {
+        case 1:
+            infoEco.style.display = "block"
+            infoProgra.style.display = "none"
+            infoMineria.style.display = "none"
+            break;
+        case 2:
+            infoEco.style.display = "none"
+            infoProgra.style.display = "block"
+            infoMineria.style.display = "none"
+            break;
+        case 3:
+            infoEco.style.display = "none"
+            infoProgra.style.display = "none"
+            infoMineria.style.display = "block"
+            break;
     }
 }

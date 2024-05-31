@@ -7,93 +7,267 @@ body {
 }
 
 .top {
+    position: fixed;
     display: grid;
+    width: 100%;
     grid-template-columns: 20% 60% 20%;
-    font-size: 1.5rem;
-    color: aliceblue;
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
 
-.top>h1 {
-    font-size: 3rem;
+.fondoEnca {
+    position: fixed;
+    width: 100%;
+    background-color: #061562;
 }
 
-.logo {
-    width: 10%;
-    border-radius: 10%;
-    text-align: center;
+.enlacesPrin {
+    top: 14%;
+}
+
+.enlacesNav {
+    color: white;
+    text-decoration: none;
+}
+
+.enlacesNav:hover {
+    font-size: 1.6rem;
 }
 
 #video_background {
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
     min-width: 100%;
-    min-height: 85%;
+    min-height: 100%;
     width: auto;
     height: auto;
-    z-index: -1000;
-    overflow: hidden;
+    z-index: -1;
 }
 
 .enlace {
     font-size: 1.4rem;
 }
 
-.info {
-    width: 90%;
-    margin-left: 5%;
-    height: 75%;
-    position: absolute;
-    overflow: hidden;
-    padding: 10px;
-    border-radius: 10px;
-    display: none;
+.botonVolverPro {
+    width: 30%;
+    margin-left: 35%;
 }
 
-.imagenesEco {
+.header {
+    text-align: center;
+    padding: 1%;
+    background-color: #061562;
+    color: white;
+    font-weight: bold;
+}
+
+.header>h1 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+.gridBotones {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    "boton1 boton2 boton3";
+    margin-top: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#b1 {
+    grid-area: boton1;
+}
+
+#b2 {
+    grid-area: boton2;
+}
+
+#b3 {
+    grid-area: boton3;
+}
+
+.botonCarrera {
+    border: none;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #FF9912;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.contenedorTexto {
+    width: 40%;
+    position: fixed;
+    left: 2%;
+}
+
+.tituloCarrera {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.introCarrera {
+    text-align: center;
+    padding: 10px;
+}
+
+.imagen {
+    position: fixed;
+    right: 2%;
     border-radius: 10%;
 }
 
-#eco1 {
-    width: 50%;
-    margin-left: 25%;
-}
-
-#eco2, #eco7, #eco8, #eco9, #eco10, #eco11 {
-    margin-left: 30%;
-}
-
-#eco3, #eco4 {
-    width: 60%;
-    margin-left: 20%;
-}
-
-#eco5 {
-    width: 50%;
-    margin-left: 25%;
-}
-
-#eco6 {
+.botonPlanEstudios {
+    font-size: 1.3rem;
+    background-color: #061562;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
     width: 40%;
     margin-left: 30%;
 }
 
-#plantita {
-    position: fixed;
-    right: 2%;
-    bottom: 2%;
-    z-index: 2;
-    border-radius: 10%;
-    border: none;
-    cursor: pointer;
-    padding: 0.5%;
+#infoEcoturismo, #infoProgramacion, #infoMineria {
+    display: none;
+}
+
+.contenedorPlan {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas: 
+    "tituloC tituloC tituloC"
+    "perfil semestres campo"
+    "footer semestres campo";
+}
+
+.headerPlan {
+    grid-area: tituloC;
+    background-color: #061562;
+    text-align: center;
+    color: white;
+}
+
+.perfil {
+    grid-area: perfil;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.tituloPerfil, .tituloSemestre {
+    color: #FF9912;
+}
+
+.tituloPerfil {
+    font-weight: 800;
+}
+
+.tituloSemestre {
+    font-weight: 700;
+}
+
+.introPlan {
+    font-weight: bold;
+}
+
+.introPlan, .reqPlan {
+    text-align: justify;
+    font-size: 1.12rem;
+    line-height: 95%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.campoPlan {
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 100%;
+    padding: 10px;
+    margin-right: 5%;
+}
+
+.materias {
+    grid-area: semestres;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.contenedorSemetres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulo titulo"
+    "sem1 sem2"
+    "sem3 sem4"
+    "sem5 sem6";
+}
+
+.tituloSem {
+    grid-area: titulo
+}
+
+.sem1 {
+    grid-area: sem1;
+}
+.sem2 {
+    grid-area: sem2;
+}
+.sem3 {
+    grid-area: sem3;
+}
+.sem4 {
+    grid-area: sem4;
+}
+.sem5 {
+    grid-area: sem5;
+}
+.sem6 {
+    grid-area: sem6;
+}
+
+.listaSemestre {
+    text-align: left;
+    margin-left: 10%;
+    font-size: 1rem;
+    line-height: 95%;
+}
+
+.campoTrabajo {
+    grid-area: campo;
+    margin-top: 3%;
+}
+
+.footerPlan {
+    grid-area: footer;
+    background-color: #061562;
+    margin-bottom: 0%;
+    border-radius: 20px;
+    margin-left: 4%;
+}
+
+.volverCarreras {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    margin-left: 18%;
+}
+
+.volverCarreras:hover {
+    font-size: 1.7rem;
+    margin-left: 13%;
+    font-weight: bold;
 }
 
 .contenedorProgramas {
-    background-image: linear-gradient(#65f4cd 0%, #4799e9 100%);
+    background: #061562;
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
@@ -101,16 +275,15 @@ body {
     grid-template-areas: 
     "side1 side2"
     "footer footer";
-    padding: 10px;
 }
 
 .eleProgramas {
     text-align: center;
+    margin: 4% 3% 4% 3%;
 }
 
 #side1 {
     grid-area: side1;
-    margin-right: 10px;
 }
 
 #side2 {
@@ -119,104 +292,6 @@ body {
 
 #footerProgramas {
     grid-area: footer;
-}
-
-.botonVolverPro {
-    width: 30%;
-    margin-left: 35%;
-}
-
-#grid-area {
-    display: grid;
-    height: 95vh;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 80px 1fr 20px;
-    grid-template-areas:
-        "header header"
-        "content aside"
-        "footer footer";
-    align-content: center;
-    overflow-y: visible;
-}
-
-#grid-area>header {
-    grid-area: header;
-    padding: 1%;
-    text-align: center;
-    vertical-align: center;
-    overflow-y: hidden;
-    color: aliceblue;
-    background-image: url("imgs/fondoCarreras.avif");
-}
-
-#grid-area>div {
-    grid-area: content;
-    padding-top: 10%;
-}
-
-#grid-area>aside {
-    grid-area: aside;
-    margin: 2%;
-    padding: 20px;
-    font-size: 1.8rem;
-    color: azure;
-}
-
-#grid-area>footer {
-    grid-area: footer;
-}
-
-.botonCarrera {
-    border: 2px solid black;
-    border-radius: 5%;
-    margin-left: 5%;
-    margin-bottom: 2%;
-    align-items: center;
-    text-align: center;
-    background-color: aliceblue;
-    height: 25%;
-    width: 95%;
-    padding-top: 8%;
-}
-
-.presionarCarrera {
-    border: none;
-    background-color: aliceblue;
-    padding-left: 0%;
-    font-size: 1.3em;
-}
-
-.presionarCarrera:hover {
-    color: rgb(0, 217, 255)
-}
-
-.iconoCarrera {
-    width: 50px;
-    margin-left: 30%;
-    padding-right: 0;
-}
-
-#datos {
-    border-radius: 5%;
-    text-align: center;
-    font-size: 1.4rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#botonPlanEstudios {
-    margin-left: 10%; 
-    width: 80%; 
-    display: none;
-    font-size: 1.3rem;
-}
-
-#infoCarreras {
-    width: 100%;
-    height: 96%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    padding: 30px;
 }
 
 .fondoProgramas {
@@ -233,21 +308,6 @@ body {
     width: 40%;
     left: 30%;
     bottom: 3%;
-}
-
-.botonVolverProgra, .evidencias {
-    z-index: 3;
-    position: absolute; 
-    width: 20%;
-    bottom: 1%;
-}
-
-.botonVolverProgra {
-    left: 20%;
-}
-
-.evidencias {
-    right: 18%;
 }
 
 .contendorSlide {
@@ -359,15 +419,10 @@ body {
 }
 
 #videoPro {
-    width: 76%;
+    width: 80%;
+    z-index: 2;
     margin-top: 1%;
-    overflow: hidden;
-    margin-left: 12%;
-    border-radius: 3%;
+    margin-left: 10%;
+    border-radius: 4%;
 }
 
-.botonRegresoVideo {
-    width: 40%;
-    margin-left: 30%;
-    padding: 5px;
-}
