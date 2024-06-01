@@ -12,6 +12,7 @@ function mostrar(tipo) {
     let infoEco = document.getElementById('infoEcoturismo')
     let infoProgra = document.getElementById('infoProgramacion')
     let infoMineria = document.getElementById('infoMineria')
+    let intro = document.getElementById("historia")
 
     switch (tipo) {
         case 1:
@@ -19,20 +20,24 @@ function mostrar(tipo) {
                 infoEco.style.display = "block"
                 infoProgra.style.display = "none"
                 infoMineria.style.display = "none"
+                intro.style.display = "none"
             } else
                 infoEco.style.display = "none"
                 infoProgra.style.display = "none"
                 infoMineria.style.display = "none"
+                intro.style.display = "block"
             break;
         case 2:
             if(infoProgra.style.display == "none") {
                 infoEco.style.display = "none"
                 infoProgra.style.display = "block"
                 infoMineria.style.display = "none"
+                intro.style.display = "none"
             } else {
                 infoEco.style.display = "none"
                 infoProgra.style.display = "none"
                 infoMineria.style.display = "none"
+                intro.style.display = "block"
             }
             break;
         case 3:
@@ -40,10 +45,12 @@ function mostrar(tipo) {
                 infoEco.style.display = "none"
                 infoProgra.style.display = "none"
                 infoMineria.style.display = "block"
+                intro.style.display = "none"
             } else {
                 infoEco.style.display = "none"
                 infoProgra.style.display = "none"
                 infoMineria.style.display = "none"
+                intro.style.display = "block"
             }
             break;
     }

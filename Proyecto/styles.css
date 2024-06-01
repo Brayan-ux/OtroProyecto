@@ -117,6 +117,7 @@ body {
 }
 
 .contenedorTexto {
+    margin-top: 1%;
     width: 40%;
     position: fixed;
     left: 2%;
@@ -133,9 +134,21 @@ body {
 }
 
 .imagen {
+    margin-top: 1%;
     position: fixed;
     right: 2%;
     border-radius: 10%;
+}
+
+#historia {
+    padding: 1% 4% 1% 4%;
+    display: block;
+}
+
+#historia>h3{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .botonPlanEstudios {
@@ -393,6 +406,10 @@ body {
     width: 40%;
     left: 30%;
     bottom: 3%;
+}
+
+.contenedorDetBecas {
+    display: grid;
 }
 
 #presentacionClub {
