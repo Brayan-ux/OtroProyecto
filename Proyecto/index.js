@@ -15,19 +15,36 @@ function mostrar(tipo) {
 
     switch (tipo) {
         case 1:
-            infoEco.style.display = "block"
-            infoProgra.style.display = "none"
-            infoMineria.style.display = "none"
+            if (infoEco.style.display == "none") {
+                infoEco.style.display = "block"
+                infoProgra.style.display = "none"
+                infoMineria.style.display = "none"
+            } else
+                infoEco.style.display = "none"
+                infoProgra.style.display = "none"
+                infoMineria.style.display = "none"
             break;
         case 2:
-            infoEco.style.display = "none"
-            infoProgra.style.display = "block"
-            infoMineria.style.display = "none"
+            if(infoProgra.style.display == "none") {
+                infoEco.style.display = "none"
+                infoProgra.style.display = "block"
+                infoMineria.style.display = "none"
+            } else {
+                infoEco.style.display = "none"
+                infoProgra.style.display = "none"
+                infoMineria.style.display = "none"
+            }
             break;
         case 3:
-            infoEco.style.display = "none"
-            infoProgra.style.display = "none"
-            infoMineria.style.display = "block"
+            if(infoMineria.style.display == "none") {
+                infoEco.style.display = "none"
+                infoProgra.style.display = "none"
+                infoMineria.style.display = "block"
+            } else {
+                infoEco.style.display = "none"
+                infoProgra.style.display = "none"
+                infoMineria.style.display = "none"
+            }
             break;
     }
 }

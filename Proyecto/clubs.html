@@ -10,95 +10,113 @@
     <script src="Bootstrap/js/bootstrap.min.js"></script>
 </head>
 
-<body style="background-image: linear-gradient(#8c366c 0%, #6f64e7 100%);">
-    <div class="row">
-        <div id="clubs" class="carousel slide row">
-            <div class="carousel-inner">
-                <div class="carousel-item active contendorSlide">
-                    <img class="d-block h-100" id="presentacionClub" src="imgs/fondoInicioClubes.avif">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h1 id="tituloInicioClubs">Bienvenido a los clubs</h1>
-                        <p class="textoInformaClub">
-                            El Cecytea cuenta con una gran variedad de clubes deportivos y culturales dentro de los cuales podrás desarrollar muchas habilidades distintas y descubrir nuevos intereses.
-                        </p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block h-100" id="imagenBanda" src="imgs/bandaGuerra.png">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Banda de Guerra</h5>
-                        <p id="textoBanda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block h-100" id="imagenEscolta" src="imgs/escolta.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Escolta</h5>
-                        <p id="textoEscolta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block" id="imagenDanzaOtra" src="imgs/otra.jpg" align="right">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Danza</h5>
-                        <p id="textoDanza">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block" id="imagenBeisbol" src="imgs/beisbol.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Beisbol</h5>
-                        <p id="textoBeisbol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block" id="imagenFutbol" src="imgs/futbol.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Futbol</h5>
-                        <p id="textoFutbol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block" id="imagenBasquetbol" src="imgs/basquetbol.jpg">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Basquetbol</h5>
-                        <p id="textoBasquetbol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
-                </div>
-                <div class="carousel-item contendorSlide">
-                    <img class="d-block" id="imagenAjedrez" src="imgs/ajedrez.webp">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="tituloClubes">Ajedrez</h5>
-                        <p id="textoAjedrez">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error, neque doloremque
-                            enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
-                            dolor autem, molestiae quas!</p>
-                    </div>
+<body style="background-color: #061562;">
+    <div id="clubs" class="carousel" style="background-color: white; margin-top: 1%;">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="margin-bottom: 1%;">
+                <img id="presentacionClub" src="imgs/fondoInicioClubes.jpg">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 id="tituloInicioClubs">BIENVENIDO A LOS CLUBS</h1>
+                    <p class="textoInformaClub">
+                        El Cecytea cuenta con una gran variedad de clubes deportivos y culturales dentro de los
+                        cuales podrás desarrollar muchas habilidades distintas y descubrir nuevos intereses.
+                    </p>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#clubs" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Anterior</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#clubs" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Siguiente</span>
-            </button>
+            <div class="carousel-item">
+                <div class="contenedorNormal">
+                    <h5>BANDA DE GUERRA</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 65%; margin-left: 18%;" src="imgs/bandaGuerra.png">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorNormal">
+                    <h5>ESCOLTA</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 50%; margin-left: 25%;" src="imgs/escolta.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorSlide">
+                    <h5>DANZA</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 80%; margin-left: 4%; margin-bottom: 3%;" src="imgs/danza.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorSlide">
+                    <h5 style="margin-left: 16%;">FOTOGRAFÍA</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 75%; margin-left: 9%; margin-bottom: 5%;" src="imgs/fotografía.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorNormal">
+                    <h5>POESÍA</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 63%; margin-left: 19%;" src="imgs/poesia.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorSlide">
+                    <h5 style="margin-left: 16%;">AJEDREZ</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 68%; margin-left: 9%; margin-bottom: 5%;" src="imgs/ajedrez.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorNormal">
+                    <h5>FUTBOL</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 50%; margin-left: 25%;" src="imgs/futbol.jpg">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="contenedorNormal">
+                    <h5>BEISBOL</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam error,
+                        neque doloremque
+                        enim delectus recusandae obcaecati voluptates sequi facere. Illo ipsum iusto odit eius sunt
+                        dolor autem, molestiae quas!</p>
+                    <img style="width: 45%; margin-left: 25%;" src="imgs/beisbol.jpg">
+                </div>
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#clubs" data-bs-slide="prev" style="background-color: #061562;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#clubs" data-bs-slide="next" style="background-color: #061562;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
     <footer>
-        <a class="btn btn-info botonRegresoVideo" style="margin-top: 2%;" href="main.html">Volver al inicio</a>
+        <a href="main.html"><img
+                style="position: fixed; max-width: 6%; bottom: 2%; left: 2%; background-color: white; padding: 6px; border-radius: 50px; border: 5px solid #FF9912; z-index: 2;"
+                src="imgs/flechaRegreso.png"></a>
     </footer>
 </body>
 

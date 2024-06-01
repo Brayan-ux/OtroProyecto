@@ -26,6 +26,17 @@ body {
     top: 14%;
 }
 
+.enlaceRed {
+    border-radius: 5%;
+    padding: 4px;
+}
+
+.enlaceRed:hover {
+    background-color: white;
+    border-radius: 20%;
+    padding: 1px;
+}
+
 .enlacesNav {
     color: white;
     text-decoration: none;
@@ -69,8 +80,8 @@ body {
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
     gap: 20px;
-    grid-template-areas: 
-    "boton1 boton2 boton3";
+    grid-template-areas:
+        "boton1 boton2 boton3";
     margin-top: 1%;
     margin-left: 1%;
     margin-right: 1%;
@@ -100,6 +111,11 @@ body {
     font-weight: 600;
 }
 
+.botonCarrera:hover {
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
 .contenedorTexto {
     width: 40%;
     position: fixed;
@@ -112,7 +128,7 @@ body {
 }
 
 .introCarrera {
-    text-align: center;
+    text-align: justify ;
     padding: 10px;
 }
 
@@ -134,7 +150,9 @@ body {
     margin-left: 30%;
 }
 
-#infoEcoturismo, #infoProgramacion, #infoMineria {
+#infoEcoturismo,
+#infoProgramacion,
+#infoMineria {
     display: none;
 }
 
@@ -142,10 +160,10 @@ body {
     display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: 50px 1fr 50px;
-    grid-template-areas: 
-    "tituloC tituloC tituloC"
-    "perfil semestres campo"
-    "footer semestres campo";
+    grid-template-areas:
+        "tituloC tituloC tituloC"
+        "perfil semestres campo"
+        "footer semestres campo";
 }
 
 .headerPlan {
@@ -161,7 +179,8 @@ body {
     margin-top: 2%;
 }
 
-.tituloPerfil, .tituloSemestre {
+.tituloPerfil,
+.tituloSemestre {
     color: #FF9912;
 }
 
@@ -177,7 +196,8 @@ body {
     font-weight: bold;
 }
 
-.introPlan, .reqPlan {
+.introPlan,
+.reqPlan {
     text-align: justify;
     font-size: 1.12rem;
     line-height: 95%;
@@ -203,11 +223,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 50px 1fr 1fr 1fr;
-    grid-template-areas: 
-    "titulo titulo"
-    "sem1 sem2"
-    "sem3 sem4"
-    "sem5 sem6";
+    grid-template-areas:
+        "titulo titulo"
+        "sem1 sem2"
+        "sem3 sem4"
+        "sem5 sem6";
 }
 
 .tituloSem {
@@ -217,18 +237,23 @@ body {
 .sem1 {
     grid-area: sem1;
 }
+
 .sem2 {
     grid-area: sem2;
 }
+
 .sem3 {
     grid-area: sem3;
 }
+
 .sem4 {
     grid-area: sem4;
 }
+
 .sem5 {
     grid-area: sem5;
 }
+
 .sem6 {
     grid-area: sem6;
 }
@@ -272,14 +297,28 @@ body {
     height: 100vh;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 50px;
-    grid-template-areas: 
-    "side1 side2"
-    "footer footer";
+    grid-template-areas:
+        "side1 side2"
+        "footer footer";
 }
 
 .eleProgramas {
     text-align: center;
     margin: 4% 3% 4% 3%;
+}
+
+.botonProgramas {
+    border-radius: 10px;
+    background-color: #FF9912;
+    color: white;
+    font-size: 1.3rem;
+    padding: 5px;
+    border: 2px solid #061562;
+    font-weight: 600;
+}
+
+.botonProgramas:hover {
+    font-size: 1.6rem;
 }
 
 #side1 {
@@ -304,111 +343,100 @@ body {
 
 .botonVolverCarr {
     z-index: 3;
-    position: absolute; 
+    position: absolute;
     width: 40%;
     left: 30%;
     bottom: 3%;
 }
 
-.contendorSlide {
-    width: 78%;
-    overflow: hidden;
-    max-height: 95%;
-}
-
 #presentacionClub {
-    width: 60%;
-    max-height: 80%;
-    margin-left: 21%;
+    width: 64%;
+    margin-left: 18%;
     margin-top: 2%;
     border-radius: 3%;
 }
 
 #tituloInicioClubs {
-    font-size: 8rem;
+    font-size: 7.5rem;
     width: 80%;
     margin-left: 11%;
-    color: #da22eb;
+    color: #FF9912;
+    font-weight: bold;
 }
 
 .textoInformaClub {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     width: 80%;
     margin-left: 11%;
-    color: #90089c;
+    margin-top: 5%;
+    color: white;
+    font-weight: 600;
 }
 
-#imagenBanda, #imagenEscolta, #imagenDanzaOtra, #imagenBeisbol, #imagenFutbol, #imagenBasquetbol, #imagenAjerdrez {
-    overflow: hidden;
-}
-
-#imagenBanda, #textoBanda {
-    width: 75%;
-    margin-left: 13%;
-    margin-top: 2%;
-    border-radius: 3%;
-}
-
-#imagenEscolta, #textoEscolta {
-    width: 62%;
-    margin-left: 19%;
-    margin-top: 1%;
-    border-radius: 5%;
-}
-
-#imagenDanzaOtra {
-    width: 65%;
-    margin-right: 18%;
-    margin-top: 1%;
-    border-radius: 5%;
-    margin-bottom: -10%;
-}
-
-#textoDanza {
+.contenedorSlide {
+    display: grid;
     width: 80%;
+    border-radius: 10%;
     margin-left: 10%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 1fr;
+    grid-template-areas:
+        "titulo imagen"
+        "texto imagen";
 }
 
-#imagenBeisbol, #textoBeisbol {
-    width: 75%;
-    margin-top: 1%;
-    border-radius: 5%;
-    margin-left: 13%;
+.contenedorSlide>img {
+    grid-area: imagen;
+    margin-top: 5%;
+    border-radius: 10%;
 }
 
-#imagenFutbol, #textoFutbol {
-    width: 65%;
-    margin-left: 18%;
-    margin-top: 1%;
-    border-radius: 5%;
-    margin-bottom: -2%;
-}
-
-#imagenBasquetbol, #textoBasquetbol {
-    width: 65%;
-    margin-left: 18%;
-    margin-top: 1%;
-    border-radius: 5%;
-    margin-bottom: -2%;
-}
-
-#imagenAjedrez, #textoAjedrez {
-    width: 60%;
-    margin-left: 20%;
-    margin-top: 1%;
-    border-radius: 5%;
-    margin-bottom: -2%;
-}
-
-#textoBanda, #textoEscolta, #textoAjedrez, #textoBasquetbol, #textoBeisbol, #textoDanza, #textoFutbol {
-    font-size: 1.2rem;
-    font-weight: 500;
-} 
-
-.tituloClubes {
-    font-size: 4rem;
+.contenedorSlide>h5 {
+    grid-area: titulo;
+    font-size: 5rem;
     margin-top: 1%;
     font-weight: 700;
+    color: #FF9912;
+    text-align: center;
+    padding: 2%;
+    margin-left: 20%;
+}
+
+.contenedorSlide>p {
+    grid-area: texto;
+    color: black;
+    padding: 1%;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: normal;
+    margin-left: 20%;
+}
+
+.contenedorNormal {
+    width: 70%;
+    margin-left: 15%;
+    padding: 10px;
+    margin-bottom: 4%;
+}
+
+.contenedorNormal>h5 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FF9912;
+    text-align: center;
+}
+
+.contenedorNormal>p {
+    color: black;
+    padding: 1%;
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: normal;
+}
+
+.contenedorNormal>img {
+    border-radius: 10%;
+    margin: none;
 }
 
 .contenedorVideo {
@@ -425,4 +453,3 @@ body {
     margin-left: 10%;
     border-radius: 4%;
 }
-
