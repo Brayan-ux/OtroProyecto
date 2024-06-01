@@ -1,15 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoción Cecytea Asientos</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../Bootstrap/css/bootstrap.min.css">
+    <script src="../Bootstrap/js/bootstrap.min.js"></script>
+    <link rel="icon" href="../imgs/logoChiquito.png" type="image/x-icon">
 </head>
-<body>
+
+<body style="background-color: #061562;">
+    <div class="contenedorTransporte">
+        <div class="titulosP">
+            <p class="lead">La institución cuenta con 3 transportes privados encargados de facilitar el translado de los estudiantes, tanto para la entrada como para la salida de clases.</p>
+            <h3>HORARIOS DE TRANSPORTE</h3>  
+        </div>
+        <div id="tablasH" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <table class="table table-striped table-dark text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="3">URVAN 015</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="3">Vuelta 1</th>
+                        <td>6:10 AM</td>
+                        <td>San José del Rio</td>
+                      </tr>
+                      <tr>
+                        <td>6:20 AM</td>
+                        <td>Lázaro Cárdenas</td>
+                      </tr>
+                      <tr>
+                        <td>6:25 AM</td>
+                        <td>Ciénega Grande</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Vuelta 2</th>
+                        <td>6:50 AM</td>
+                        <td>Ciénega Grande</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Vuelta 3</th>
+                        <td>7:20 AM</td>
+                        <td>San Gil</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="carousel-item">
+                <table class="table table-striped table-dark text-center">
+                    <thead>
+                      <tr>
+                        <th scope="col" colspan="3">URVAN 045</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" rowspan="5">Vuelta 1</th>
+                        <td>7:25 AM</td>
+                        <td>Bimabletes Álamo</td>
+                      </tr>
+                      <tr>
+                        <td>7:30 AM</td>
+                        <td>Bimbaletes Atlas</td>
+                      </tr>
+                      <tr>
+                        <td>7:35 AM</td>
+                        <td>Guadalupe de Atlas</td>
+                      </tr>
+                      <tr>
+                        <td>7:40 AM</td>
+                        <td>Norias del Borrego</td>
+                      </tr>
+                      <tr>
+                        <td>7:45 AM</td>
+                        <td>Jarillas</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Vuelta 2</th>
+                        <td>8:10 AM</td>
+                        <td>Colonia Calles</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#tablasH" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tablasH" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        <div class="videoC">
+            <video muted loop autoplay>
+                <source src="../videos/combi.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
     <footer id="footerProgramas">
         <a href="../programas.html"><img
-          style="position:fixed; max-width: 4%; bottom: 2%; left: 2%; background-color: white; padding: 6px; border-radius: 50px; border: 5px solid #FF9912;"
-          src="../imgs/flechaRegreso.png"></a>
-      </footer>
+                style="position:fixed; max-width: 4%; bottom: 2%; left: 1%; background-color: white; padding: 6px; border-radius: 50px; border: 5px solid #FF9912; z-index: 2;"
+                src="../imgs/flechaRegreso.png"></a>
+    </footer>
 </body>
+
 </html>
