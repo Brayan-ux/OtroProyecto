@@ -6,84 +6,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promoción Cecytea Asientos</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
     <script src="Bootstrap/js/bootstrap.min.js"></script>
     <link rel="icon" href="imgs/logoChiquito.ico" type="image/x-icon">
 </head>
 
 <body>
-    <section id="grid-area">
-        <header class="header">
-            <h1>Carreras ofertadas</h1>
-        </header>
-        <div>
-            <div class="gridBotones">
-                <button class="botonCarrera" type="button" id="b1" onclick="mostrar(1)">
-                    Ecoturismo
-                </button>
-                <button class="botonCarrera" type="button" id="b2" onclick="mostrar(2)">
-                    Programación
-                </button>
-                <button class="botonCarrera" type="button" id="b3" onclick="mostrar(3)">
-                    Minería
-                </button>
-            </div>
-            <div id="historia">
-                <h3>HISTORIA</h3>
-                <p class="lead" style="font-size: 1.4rem; text-align: justify;">
-                    El Plantel CECyT Asientos surge de la necesidad de atender la demanda de servicios escolares de Educación Media Superior de este municipio, el cual inicia sus actividades el día 30 de agosto del 1993, en instalaciones provisionales, con la modalidad de Bachillerato Tecnológico Bivalente, impartiendo la especialidad de Técnico en Informática.
-                    <br>
-                    El 15 de junio de 1994 arrancan las actividades en instalaciones propias del plantel, que constan de 6 aulas, 2 laboratorios de Informática, 1 laboratorio de idiomas, biblioteca y 1 laboratorio de Química. Desde el año 2001, el Plantel cuenta con transporte propio para el traslado de los alumnos que asisten de diferentes comunidades, así como becas alimenticias y académicas.
-                    <br>
-                    El 30 de octubre de 2006 Real de Asientos adquiere el nombramiento de Pueblo Mágico, y así, se logra implementar la especialidad de Técnico en Turismo en el año 2009, es con esta carrera como se pretende en coordinación con los actores turísticos locales, cimentar una cultura de calidad en los servicios ofrecidos a los turistas que visitan dicho municipio.
-                </p>
-            </div>
-            <div id="infoEcoturismo">
-                <div>
-                    <div class="contenedorTexto">
-                        <h3 class="tituloCarrera display-6">Ecoturismo</h3>
-                        <p class="introCarrera lead">
-                            Los alumnos comienzan con conocimientos de los recursos naturales, se valoran y aprenden los
-                            impactos que tienen de manera turística. Los alumnos aprender a realizar rutas turísticas
-                            tienen
-                            prácticas profesionales respecto a hoteleria, cocina y finalizan con promoción, publicidad,
-                            mercadotecnia y contaduría. Para esta carrera se cuenta totalmente con los espacios y
-                            utensilios
-                            necesarios para que los alumnos realicen sus prácticas profesionalmente.
-                        </p>
-                        <a href="planEco.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
-                    </div>
-                    <img class="imagen" src="imgs/fondoEcoturismo.jpg">
+    <header class="header">
+        <h1>Carreras ofertadas</h1>
+    </header>
+    <div>
+        <div class="gridBotones">
+            <button class="botonCarrera" type="button" id="b1">
+                Ecoturismo
+            </button>
+            <button class="botonCarrera" type="button" id="b2">
+                Programación
+            </button>
+            <button class="botonCarrera" type="button" id="b3">
+                Minería
+            </button>
+        </div>
+        <div id="infoEcoturismo">
+            <div>
+                <div class="contenedorTexto">
+                    <h3 class="tituloCarrera display-6">Ecoturismo</h3>
+                    <p class="introCarrera lead">
+                        Los alumnos comienzan con conocimientos de los recursos naturales, se valoran y aprenden los
+                        impactos que tienen de manera turística. Los alumnos aprender a realizar rutas turísticas
+                        tienen
+                        prácticas profesionales respecto a hoteleria, cocina y finalizan con promoción, publicidad,
+                        mercadotecnia y contaduría. Para esta carrera se cuenta totalmente con los espacios y
+                        utensilios
+                        necesarios para que los alumnos realicen sus prácticas profesionalmente.
+                    </p>
+                    <a href="planEco.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
                 </div>
-            </div>
-            <div id="infoProgramacion">
-                <div>
-                    <div class="contenedorTexto">
-                        <h3 class="tituloCarrera display-6">Programación</h3>
-                        <p class="introCarrera lead">Esta especialidad consiste en la utilización de diferentes lenguajes de programación para realizar elementos visuales, páginas web ,aplicaciones, entre otras cosas, para ello contamos con un laboratorio con los equipos necesarios, y una biblioteca de laptops para el uso de los estudiantes.</p>
-                        <a href="planProgra.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
-                    </div>
-                    <img class="imagen" style="width: 53%;" src="imgs/fondoProgra.jpg">
-                </div>
-            </div>
-            <div id="infoMineria">
-                <div>
-                    <div class="contenedorTexto" style="margin-left: 5%;">
-                        <h3 class="tituloCarrera display-6">Minería</h3>
-                        <p class="introCarrera lead">Esta especialidada es una emocionante opción educativa para estudiantes interesados en explorar el mundo subterráneo y participar en una industria vital para el desarrollo económico y tecnológico de nuestro país. Esta carrera ofrece una combinación única de conocimientos teóricos y habilidades prácticas, preparándote para enfrentar los desafíos de la extracción de recursos minerales de manera segura y eficiente.</p>
-                        <a href="planMine.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
-                    </div>
-                    <img class="imagen" style="width: 45%;" src="imgs/fondoMineria.jpg">
-                </div>
+                <img class="imagen" style="width: 55%;" src="imgs/fondoEcoturismo.jpg">
             </div>
         </div>
-        <footer class="item footer">
-            <a href="main.html"><img
-                    style="position:fixed; max-width: 60px; bottom: 1%; left: 1%; background-color: white; padding: 6px; border-radius: 30px; border: 2px solid #FF9912;"
-                    src="imgs/flechaRegreso.png"></a>
-        </footer>
-    </section>
+        <div id="infoProgramacion">
+            <div>
+                <div class="contenedorTexto">
+                    <h3 class="tituloCarrera display-6">Programación</h3>
+                    <p class="introCarrera lead">Esta especialidad consiste en la utilización de diferentes lenguajes de
+                        programación para realizar elementos visuales, páginas web ,aplicaciones, entre otras cosas,
+                        para ello contamos con un laboratorio con los equipos necesarios, y una biblioteca de laptops
+                        para el uso de los estudiantes.</p>
+                    <a href="planProgra.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
+                </div>
+                <img class="imagen" style="width: 53%;" src="imgs/fondoProgra.jpg">
+            </div>
+        </div>
+        <div id="infoMineria">
+            <div>
+                <div class="contenedorTexto" style="margin-left: 5%;">
+                    <h3 class="tituloCarrera display-6">Minería</h3>
+                    <p class="introCarrera lead">Esta especialidada es una emocionante opción educativa para estudiantes
+                        interesados en explorar el mundo subterráneo y participar en una industria vital para el
+                        desarrollo económico y tecnológico de nuestro país. Esta carrera ofrece una combinación única de
+                        conocimientos teóricos y habilidades prácticas, preparándote para enfrentar los desafíos de la
+                        extracción de recursos minerales de manera segura y eficiente.</p>
+                    <a href="planMine.html"><button class="botonPlanEstudios">Ver plan de estudios</button></a>
+                </div>
+                <img class="imagen" style="width: 45%;" src="imgs/fondoMineria.jpg">
+            </div>
+        </div>
+        <div id="historia">
+            <div class="contHistoria">
+                <h3>HISTORIA</h3>
+                <p class="lead" style="font-size: 1.15rem; text-align: justify;">
+                    El Plantel CECyT Asientos surge de la necesidad de atender la demanda de servicios escolares de
+                    Educación Media Superior de este municipio, el cual inicia sus actividades el día 30 de agosto del
+                    1993,
+                    en instalaciones provisionales, con la modalidad de Bachillerato Tecnológico Bivalente, impartiendo
+                    la
+                    especialidad de Técnico en Informática.
+                    <br>
+                    El 15 de junio de 1994 arrancan las actividades en instalaciones propias del plantel, que constan de
+                    6
+                    aulas, 2 laboratorios de Informática, 1 laboratorio de idiomas, biblioteca y 1 laboratorio de
+                    Química.
+                    Desde el año 2001, el Plantel cuenta con transporte propio para el traslado de los alumnos que
+                    asisten
+                    de diferentes comunidades, así como becas alimenticias y académicas.
+                    <br>
+                    El 30 de octubre de 2006 Real de Asientos adquiere el nombramiento de Pueblo Mágico, y así, se logra
+                    implementar la especialidad de Técnico en Turismo en el año 2009, es con esta carrera como se
+                    pretende
+                    en coordinación con los actores turísticos locales, cimentar una cultura de calidad en los servicios
+                    ofrecidos a los turistas que visitan dicho municipio.
+                </p>
+            </div>
+            <img src="imgs/ladoHistoria.jpeg" id="imgHist">
+        </div>
+    </div>
+    <footer class="item footer">
+        <a href="main.html"><img
+                style="position:fixed; max-width: 60px; bottom: 1%; left: 1%; background-color: white; padding: 6px; border-radius: 30px; border: 2px solid #FF9912;"
+                src="imgs/flechaRegreso.png"></a>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
