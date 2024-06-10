@@ -345,6 +345,14 @@ body {
         "footer footer";
 }
 
+#side1 {
+    grid-area: side1;
+}
+
+#side2 {
+    grid-area: side2;
+}
+
 .eleProgramas {
     text-align: center;
     margin: 4% 3% 4% 3%;
@@ -364,13 +372,6 @@ body {
     font-size: 1.6rem;
 }
 
-#side1 {
-    grid-area: side1;
-}
-
-#side2 {
-    grid-area: side2;
-}
 
 #footerProgramas {
     grid-area: footer;
